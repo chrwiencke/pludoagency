@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pludo Kontakt</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <header>
-        <a href="/"><h1>Pludo Agency</h1></a>
-            <h2>Web Design</h2>
-    </header>
+    <nav id="navbar">
+        <ul>
+            <a href="/index.html"><i  class="fa fa-home"></i> Hjemmeside</a>
+            <a href="/Planer/index.html"><i class ="fa fa-usd"></i> Planer</a>
+            <img class="logo" src="/logo.svg" alt="logo"> 
+            <a href="/kontakt/index.html"><i class="fa fa-envelope-open"></i> Kontakt</a>
+            <a href="/om/index.html"><i class="fa fa-align-left"></i> Om Oss</a>
+        </ul>
+    </nav>
+
     <div id="centerdivplsplspls">
         <section class="contactform">
             <h1>Kontakt Oss!</h1>
@@ -23,18 +33,19 @@
                 </select>
         
                 <label for="name">Navn:</label>
-                <input type="text" id="name" />
+                <input type="text" id="name" required/>
 
                 <label for="email">Epost:</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" required/>
 
                 <label for="message">Melding:</label>
-                <textarea id="message" rows="5"></textarea>
+                <textarea id="message" rows="5" required></textarea>
 
                 <button type="submit">Send</button>
             </form>
         </section>
     </div>
     <script src="../main.js"></script>
+    <script src="sticky.js"></script>
 </body>
 </html>

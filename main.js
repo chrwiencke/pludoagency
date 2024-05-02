@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
+    alert('Vi kommer til å være i kontakt med deg snart!')
     e.preventDefault();
 
     const name = document.querySelector('#name').value;
